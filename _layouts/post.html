@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<a class="blog-link" href="/blog">&larr; Back to Posts</a>
+
+<main class="post">
+  <h1>{{ page.title }}</h1>
+  <p class="date">{{ page.date | date_to_string }}</p>
+
+  {{ content }}
+</main>

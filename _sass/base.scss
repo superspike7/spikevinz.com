@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
-$bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$bodyFont: "Roboto", sans;
 $primary: #d30001;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
   background: $backgroundColor;
@@ -18,6 +19,11 @@ body {
   flex-direction: column;
   gap: 8px;
   height: 100vh;
+
+  > a {
+    font-size: 1.5em;
+    color: #111;
+  }
 }
 
 h2,
@@ -25,8 +31,8 @@ h1 {
   margin: 0;
 }
 
-h1 {
-  font-size: 64px;
+.name {
+  font-size: 3.5em;
   font-family: "Roboto Mono", monospace;
   font-size: 700;
   position: relative;
@@ -42,18 +48,27 @@ h1 {
     background: $primary;
     z-index: -1;
   }
+
+  &.--link {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+
+    &::before {
+      bottom: -6px;
+    }
+  }
 }
 
-h2 {
-  font-family: Roboto, sans;
+.job {
   font-weight: 300;
   margin-top: 12px;
-  font-size: 32px;
+  font-size: 2em;
 }
 
 @media only screen and (max-width: 900px) {
-  h1 {
-    font-size: 32px;
+  .name {
+    font-size: 2em;
 
     &::before {
       content: "";
@@ -68,8 +83,9 @@ h2 {
     }
   }
 
-  h2 {
-    font-size: 22px;
+  .job {
+    font-size: 1.3em;
+    text-align: center;
   }
 
 }
@@ -99,11 +115,41 @@ h2 {
 }
 
 .email {
-  font-size: 22px;
+  font-size: 1.2em;
 
   span {
     font-weight: bold;
     font-style: italic;
     text-decoration: underline;
   }
+}
+
+a {
+  color: $primary;
+
+  &:hover {
+    filter: brightness(60%);
+  }
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 22px;
+
+  a {
+    color: #111;
+    padding-bottom: 0;
+    text-decoration: none;
+  }
+}
+
+.blog-link {
+  margin: 18px 0;
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  color: #111;
 }

@@ -1,0 +1,63 @@
+.post,
+.posts {
+  max-width: 700px;
+  padding: 8px;
+  margin: 0 auto;
+
+  >h1,
+  h2,
+  .date {
+    text-align: center;
+  }
+
+  >h1 {
+    font-weight: 400;
+    font-size: 2.5em;
+  }
+
+  >h2 {
+    font-weight: 400;
+  }
+
+  >.date {
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.posts {
+  margin-top: 60px;
+  max-width: 600px;
+  padding: 0;
+
+  .header {
+    font-size: 2.5em;
+  }
+
+  >ul {
+    padding: 0;
+
+    >li {
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      text-decoration: none;
+      list-style: none;
+
+      >p {
+        margin: 0;
+        font-size: 1.3em;
+        font-weight: 300;
+      }
+
+      >a {
+        font-size: 1.3em;
+      }
+
+    }
+  }
+}
