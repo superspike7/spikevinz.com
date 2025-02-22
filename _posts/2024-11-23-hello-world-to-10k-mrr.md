@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "From 'Hello World' to $10K MRR"
+published: false
 ---
 
 I’m starting a journey to go from **Hello World** to **$10K MRR** by building a software business using **Ruby on Rails**.
