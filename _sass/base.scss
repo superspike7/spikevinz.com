@@ -2,136 +2,106 @@
 
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
-$bodyFont: "Roboto", sans;
+$bodyFont: "Roboto Mono", monospace;
 $primary: #d30001;
 
+// Minimal reset
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
+  line-height: 1.6;
 }
 
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #8f0001;
+  }
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+// Homepage
 .home-center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   height: 100vh;
-
-  > a {
-    font-size: 1.5em;
-    color: #111;
-  }
-}
-
-h2,
-h1 {
-  margin: 0;
+  padding: 0 24px;
 }
 
 .name {
-  font-size: 3.5em;
-  font-family: "Roboto Mono", monospace;
-  font-size: 700;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -4px;
-    width: 110%;
-    height: 14px;
-    transform: skew(-12deg) translateX(-50%);
-    background: $primary;
-    z-index: -1;
-  }
-
-  &.--link {
-    font-size: 2em;
-    text-align: center;
-    font-weight: 600;
-
-    &::before {
-      bottom: -6px;
-    }
-  }
+  font-size: 3em;
+  font-weight: 700;
 }
 
 .job {
   font-weight: 300;
-  margin-top: 12px;
-  font-size: 2em;
+  font-size: 1.4em;
+  margin-top: 4px;
 }
 
-@media only screen and (max-width: 900px) {
-  .name {
-    font-size: 2em;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: -4px;
-      width: 110%;
-      height: 8px;
-      transform: skew(-12deg) translateX(-50%);
-      background: $primary;
-      z-index: -1;
-    }
-  }
-
-  .job {
-    font-size: 1.3em;
-    text-align: center;
-  }
-
+.tagline {
+  font-weight: 300;
+  font-size: 1em;
+  color: #555;
+  margin-top: 2px;
 }
 
 .links {
-  padding-top: 12px;
+  padding-top: 16px;
   display: flex;
-  gap: 24px;
-  font-size: 1.5em;
+  gap: 20px;
+  align-items: center;
 
-  >a {
-    padding-bottom: 0;
-    border-bottom: 4px solid white;
+  > a {
+    display: flex;
+    align-items: center;
+    color: $bodyColor;
+    transition: color 0.2s ease;
 
     &:hover {
-      border-bottom: 4px solid $primary;
+      color: $primary;
     }
 
-    >svg {
-      height: 1.5em;
-      width: 1.5em;
-
-      color: black;
+    > svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
     }
   }
+}
 
+.home-center > a {
+  font-size: 1.2em;
+  margin-top: 8px;
 }
 
 .email {
-  font-size: 1.2em;
+  font-size: 0.95em;
+  margin-top: 4px;
+  color: #555;
 
-  span {
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
+  a {
+    font-weight: 500;
   }
 }
 
-a {
-  color: $primary;
-
-  &:hover {
-    filter: brightness(60%);
-  }
-}
-
+// Navbar
 .navbar {
   width: 100%;
   display: flex;
@@ -140,16 +110,38 @@ a {
   margin-bottom: 22px;
 
   a {
-    color: #111;
-    padding-bottom: 0;
+    color: $bodyColor;
     text-decoration: none;
+    font-size: 1.6em;
+    font-weight: 600;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $primary;
+    }
   }
 }
 
 .blog-link {
-  margin: 18px 0;
   display: block;
   text-align: center;
-  font-size: 1.5em;
-  color: #111;
+  font-size: 1em;
+  margin: 18px 0;
+}
+
+// Mobile
+@media only screen and (max-width: 900px) {
+  .name {
+    font-size: 2em;
+  }
+
+  .job {
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 0.85em;
+    text-align: center;
+  }
 }
