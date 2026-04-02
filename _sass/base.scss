@@ -86,9 +86,12 @@ h1, h2 {
   }
 }
 
-.home-center > a {
-  font-size: 1.2em;
-  margin-top: 8px;
+.home-nav-links {
+  margin-top: 10px;
+
+  a {
+    font-size: 1.05em;
+  }
 }
 
 .email {

@@ -1,0 +1,106 @@
+Spike Vinz Cruz
+Ruby on Rails Developer based in the Philippines
+
+Email: hey@spikevinz.com
+GitHub: https://github.com/superspike7
+LinkedIn: https://www.linkedin.com/in/spikevinz
+Location: Philippines
+
+Quick Summary
+
+I'm a Ruby on Rails developer with experience working across production apps, startup products, and client projects. My strongest work is in Rails applications where I help teams ship features, improve reliability, fix workflow-blocking issues, and simplify messy product problems.
+
+I've worked on authorization systems, test suite improvements, Hotwire UI upgrades, backend performance fixes, and product workflows tied to real business outcomes. I work best in lean teams that value ownership, clarity, and thoughtful execution.
+
+Highlights
+
+- 4+ years building software with Ruby on Rails and related web technologies
+- Officially promoted to Lead Developer at Campus Ink in January 2026
+- Strong experience with Rails, PostgreSQL, Hotwire, Sidekiq, Redis, and production debugging
+- Built personal products like CallCrew and BabyVinci from the ground up
+
+Experience
+
+Campus Ink
+Lead Developer (Contract)
+January 2026 - Present
+Software Developer (Contract)
+October 2024 - December 2025
+
+- Improved the test suite to make feature delivery safer and reduce regressions.
+- Built a new authorization and access control system for operations team management.
+- Shipped an internal marketing system that improved team execution and supported measurable revenue growth.
+- Took ownership of key systems and delivery in an existing codebase, which led to an official promotion to Lead Developer.
+
+Tech: Ruby on Rails, Hotwire, Turbo, Stimulus, PostgreSQL, Sidekiq, Redis, Heroku
+
+Virtual Coworker
+Software Developer (Contract)
+September 2024 - October 2024
+
+- Shipped features and fixes quickly in a live Rails application.
+- Upgraded outdated UI flows with Hotwire and Turbo to improve usability for core users.
+
+Tech: Ruby on Rails, Hotwire, Turbo, Stimulus, PostgreSQL, Sidekiq, Redis, Heroku
+
+Synthetic Communications Inc
+Software Developer (Contract)
+October 2023 - February 2024
+
+- Implemented optimistic updates to improve app responsiveness.
+- Added pagination to the main contacts endpoint to solve slow loading and improve scalability.
+- Moved filtering and grouping logic to the backend to fix bugs and simplify frontend behavior.
+
+Tech: Ruby on Rails, React, Node.js, Fastify, DynamoDB, AWS Lightsail, AWS Amplify
+
+Proudcloud Inc
+Software Developer
+October 2022 - October 2023
+
+Synthnode
+- Introduced React Query to improve data fetching and reduce recurring frontend bugs.
+- Built VCF import and export functionality for easier contact management.
+- Delivered features across both backend and frontend.
+
+Hey Roomie
+- Built chat features for fan and influencer engagement.
+- Improved app responsiveness by fixing performance issues in mobile lists.
+- Shared React Query practices internally through a brown bag session.
+
+Tech: Ruby on Rails, React, React Native, Docker, AWS Amplify, AWS Lightsail
+
+Trabaholine
+Software Developer (Freelance)
+October 2021 - December 2021
+
+- Built user authentication with Devise and OmniAuth.
+- Migrated frontend asset bundling from Webpacker to jsbundling/cssbundling with esbuild.
+
+Tech: Ruby on Rails, Tailwind CSS, Devise, Heroku, esbuild
+
+Selected Projects
+
+CallCrew
+A Rails-based micro SaaS for missed-call text-back and review automation for service businesses. Built around Twilio workflows, onboarding flows, and practical product operations.
+
+BabyVinci
+A baby tracking app I built for my first child, focused on fast logging for feeds, sleep, and diaper changes. Designed for real daily use with a simple, low-friction interface.
+
+Core Stack
+
+Backend: Ruby, Ruby on Rails, PostgreSQL, Sidekiq, Redis
+Frontend: Hotwire, Turbo, Stimulus, JavaScript, React, Tailwind CSS
+Tools: Git, GitHub Actions, Docker, Heroku, Linux
+Also worked with: React Native, Firebase, AWS Amplify, AWS Lightsail, DynamoDB, Fastify
+
+How I Work
+
+I like joining real products, understanding the problem quickly, and making useful progress without creating unnecessary complexity. I care about reliability, maintainability, and user experience, but I also care about momentum. I try to write code that makes the next feature easier, not harder.
+
+Education
+
+Avion School
+Full-Stack Web Development Bootcamp
+
+The Odin Project
+Ruby on Rails Path
