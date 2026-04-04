@@ -34,74 +34,135 @@ h1, h2 {
 }
 
 // Homepage
-.home-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 4px;
-  height: 100vh;
-  padding: 0 24px;
+.home-page {
+  width: min(100%, 860px);
+  margin: 0 auto;
+  padding: 56px 24px 80px;
 }
 
-.name {
-  font-size: 3em;
-  font-weight: 700;
-}
+.home-section {
+  padding: 28px 0;
+  border-top: 1px solid #d8d8d8;
 
-.job {
-  font-weight: 300;
-  font-size: 1.4em;
-  margin-top: 4px;
-}
+  &:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
 
-.tagline {
-  font-weight: 300;
-  font-size: 1em;
-  color: #555;
-  margin-top: 2px;
-}
+  h1 {
+    font-size: 3.4em;
+    line-height: 1.1;
+    margin-bottom: 18px;
+    max-width: 14ch;
+  }
 
-.links {
-  padding-top: 16px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-
-  > a {
-    display: flex;
-    align-items: center;
-    color: $bodyColor;
-    transition: color 0.2s ease;
-
-    &:hover {
-      color: $primary;
-    }
-
-    > svg {
-      width: 24px;
-      height: 24px;
-      fill: currentColor;
-    }
+  h2 {
+    font-size: 1.55em;
+    line-height: 1.25;
+    margin-bottom: 14px;
+    max-width: 28ch;
   }
 }
 
-.home-nav-links {
-  margin-top: 10px;
-
-  a {
-    font-size: 1.05em;
-  }
+.home-hero {
+  padding-bottom: 36px;
 }
 
-.email {
+.home-kicker {
+  color: $primary;
   font-size: 0.95em;
-  margin-top: 4px;
-  color: #555;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
 
-  a {
-    font-weight: 500;
+.home-lead,
+.home-copy,
+.home-pricing-note,
+.home-action-note,
+.home-section-intro,
+.home-steps p {
+  color: #555;
+  font-size: 1em;
+  max-width: 64ch;
+}
+
+.home-lead {
+  font-size: 1.08em;
+  margin-bottom: 24px;
+}
+
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 18px;
+  border: 1px solid $primary;
+  background: $primary;
+  color: $backgroundColor;
+  font-size: 0.98em;
+  font-weight: 600;
+
+  &:hover {
+    color: $backgroundColor;
+    background: #8f0001;
+    border-color: #8f0001;
   }
+}
+
+.home-list,
+.home-steps {
+  display: grid;
+  gap: 12px;
+  padding-left: 24px;
+}
+
+.home-list li,
+.home-steps li {
+  padding-left: 4px;
+}
+
+.home-list--compact {
+  gap: 10px;
+}
+
+.home-section-intro,
+.home-copy {
+  margin-bottom: 14px;
+}
+
+.home-steps {
+  counter-reset: item;
+}
+
+.home-steps li {
+  max-width: 64ch;
+}
+
+.home-steps strong {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+
+.home-pricing-note {
+  margin-top: 12px;
+}
+
+.home-section--cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
 }
 
 // Navbar
@@ -134,17 +195,30 @@ h1, h2 {
 
 // Mobile
 @media only screen and (max-width: 900px) {
-  .name {
-    font-size: 2em;
+  .home-page {
+    padding: 36px 20px 56px;
   }
 
-  .job {
-    font-size: 1.1em;
-    text-align: center;
+  .home-section {
+    padding: 22px 0;
+
+    h1 {
+      font-size: 2.2em;
+      max-width: none;
+    }
+
+    h2 {
+      font-size: 1.3em;
+      max-width: none;
+    }
   }
 
-  .tagline {
-    font-size: 0.85em;
-    text-align: center;
+  .home-lead,
+  .home-copy,
+  .home-pricing-note,
+  .home-action-note,
+  .home-section-intro,
+  .home-steps p {
+    font-size: 0.92em;
   }
 }
