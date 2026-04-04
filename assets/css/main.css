@@ -1,0 +1,776 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  color: #000000;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.6;
+  padding: 40px 24px;
+}
+
+a {
+  color: #d30001;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #8f0001;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.site-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 3px solid #000000;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  border-bottom: 3px solid #000000;
+}
+
+.logo {
+  color: #000000;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.logo:hover {
+  color: #000000;
+}
+
+.hero {
+  padding: 80px 40px;
+  border-bottom: 3px solid #000000;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: 32px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  max-width: 20ch;
+}
+
+.kicker {
+  display: inline-block;
+  color: #d30001;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  max-width: 50ch;
+  margin-bottom: 48px;
+  color: #333;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #d30001;
+  color: #fff;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: 3px solid #000000;
+  transition: all 0.15s ease;
+  box-shadow: 4px 4px 0 #000000;
+}
+
+.btn:hover {
+  color: #fff;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #000000;
+  background: #b00001;
+}
+
+.action-note {
+  font-size: 0.95rem;
+  margin-top: 16px;
+  color: #666;
+  max-width: 45ch;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  border-bottom: 3px solid #000000;
+}
+
+.grid-section:last-child {
+  border-bottom: 0;
+}
+
+.grid-header {
+  padding: 60px 40px;
+  border-right: 3px solid #000000;
+}
+
+.grid-header h2 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.grid-header p {
+  margin-top: 16px;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+.grid-content {
+  padding: 60px 40px;
+}
+
+ul.styled-list {
+  list-style: none;
+}
+
+ul.styled-list li {
+  position: relative;
+  padding: 16px 0 16px 32px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+ul.styled-list li:last-child {
+  border-bottom: 0;
+}
+
+ul.styled-list li::before {
+  content: "->";
+  position: absolute;
+  left: 0;
+  color: #d30001;
+  font-weight: 700;
+}
+
+.steps {
+  counter-reset: step;
+  list-style: none;
+}
+
+.steps li {
+  position: relative;
+  padding-left: 64px;
+  margin-bottom: 40px;
+}
+
+.steps li:last-child {
+  margin-bottom: 0;
+}
+
+.steps li::before {
+  counter-increment: step;
+  content: "0" counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d30001;
+  line-height: 1;
+}
+
+.steps strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.steps p {
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.pricing-box {
+  padding: 80px 40px;
+  text-align: center;
+  border-bottom: 3px solid #000000;
+  background: #fdfdfd;
+}
+
+.pricing-box h2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 16px;
+}
+
+.pricing-box p {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.pricing-note {
+  font-size: 0.95rem !important;
+  color: #777 !important;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.cta-section h2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  font-size: 1.15rem;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.cta-section .btn {
+  width: auto;
+}
+
+.blog-link {
+  display: inline-block;
+  margin: 24px 40px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.blog-link:hover {
+  color: #d30001;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 16px;
+  }
+
+  .navbar {
+    padding: 20px 24px;
+  }
+
+  .hero {
+    padding: 60px 24px;
+  }
+
+  .hero h1 {
+    max-width: none;
+  }
+
+  .lead {
+    font-size: 1.05rem;
+  }
+
+  .grid-section {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-header {
+    padding: 40px 24px;
+    border-right: 0;
+    border-bottom: 3px solid #000000;
+  }
+
+  .grid-header h2 {
+    font-size: 1.45rem;
+  }
+
+  .grid-content {
+    padding: 40px 24px;
+  }
+
+  ul.styled-list li {
+    font-size: 1rem;
+  }
+
+  .steps li {
+    padding-left: 52px;
+  }
+
+  .steps strong {
+    font-size: 1.05rem;
+  }
+
+  .pricing-box,
+  .cta-section {
+    padding: 60px 24px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .blog-link {
+    margin: 20px 24px 0;
+  }
+}
+
+.post-page {
+  padding-bottom: 40px;
+}
+
+.post {
+  width: 100%;
+}
+
+.post .post-hero {
+  padding: 32px 40px 36px;
+  border-bottom: 3px solid #000000;
+}
+
+.post h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+  max-width: 22ch;
+}
+
+.post .date {
+  font-size: 0.92rem;
+  color: #666;
+}
+
+.post .post-content {
+  max-width: 760px;
+  padding: 40px;
+}
+
+.post .post-content h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.post .post-content h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.post .post-content p {
+  font-size: 1.05em;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.post .post-content ul,
+.post .post-content ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.post .post-content ul li,
+.post .post-content ol li {
+  line-height: 1.8;
+  margin-bottom: 4px;
+}
+
+.post .post-content blockquote {
+  border-left: 3px solid #000000;
+  padding: 4px 0 4px 16px;
+  margin: 16px 0;
+  color: #555;
+}
+
+.post .post-content code {
+  font-size: 0.9em;
+  background: #f6f6f6;
+  padding: 2px 6px;
+  border: 1px solid #e4e4e4;
+}
+
+.post .post-content pre {
+  background: #f6f6f6;
+  padding: 16px;
+  overflow-x: auto;
+  margin-bottom: 16px;
+  border: 2px solid #000000;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.04);
+}
+
+.post .post-content pre code {
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+.post .post-content a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.post .post-content a:hover {
+  text-decoration-color: #d30001;
+}
+
+.posts {
+  width: 100%;
+}
+
+.posts-hero {
+  padding: 48px 40px;
+  border-bottom: 3px solid #000000;
+}
+
+.posts-kicker {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #d30001;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.posts-list-section {
+  padding: 24px 40px 40px;
+}
+
+.posts .header {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  max-width: 18ch;
+}
+
+.posts > section > ul {
+  padding: 0;
+  list-style: none;
+}
+
+.posts > section > ul > li {
+  padding: 18px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 2em;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.posts > section > ul > li:last-child {
+  border-bottom: 0;
+}
+
+.posts > section > ul > li > p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #666;
+  white-space: nowrap;
+}
+
+.posts > section > ul > li > a {
+  font-size: 1.08em;
+  color: #000000;
+}
+
+.posts > section > ul > li > a:hover {
+  color: #d30001;
+}
+
+@media only screen and (max-width: 900px) {
+  .post .post-hero,
+  .post .post-content,
+  .posts-hero,
+  .posts-list-section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .posts > section > ul > li {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+.resume-page {
+  padding-bottom: 56px;
+}
+
+.resume-hero {
+  padding: 64px 40px 40px;
+  border-bottom: 3px solid #000000;
+}
+
+.resume-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 16px;
+}
+
+.resume-kicker,
+.resume-meta,
+.resume-tech {
+  color: #666;
+}
+
+.resume-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #d30001;
+  margin-bottom: 24px;
+}
+
+.resume-role {
+  font-size: 1.15em;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.resume-intro {
+  max-width: 62ch;
+  font-size: 1.04em;
+  line-height: 1.8;
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 18px;
+  border: 3px solid #000000;
+  color: #000000;
+  font-size: 0.95em;
+  font-weight: 700;
+  background: #fff;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.resume-button:hover {
+  color: #000000;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.resume-button--primary {
+  background: #d30001;
+  border-color: #000000;
+  color: #fff;
+}
+
+.resume-button--primary:hover {
+  color: #fff;
+  background: #b00001;
+  border-color: #000000;
+}
+
+.resume-section {
+  padding: 40px;
+  border-bottom: 3px solid #000000;
+}
+
+.resume-section > h2 {
+  font-size: 1.6em;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.resume-section > p {
+  font-size: 1.02em;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  max-width: 64ch;
+}
+
+.resume-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.resume-card {
+  border: 3px solid #000000;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.04);
+}
+
+.resume-card h3 {
+  font-size: 1.15em;
+  margin-bottom: 6px;
+}
+
+.resume-card p {
+  line-height: 1.6;
+  color: #444;
+}
+
+.resume-highlight-value {
+  font-size: 1.05em;
+  font-weight: 700;
+  color: #d30001;
+  margin-bottom: 8px;
+}
+
+.resume-entry {
+  padding: 0 0 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.resume-entry h3 {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+.resume-entry ul {
+  padding-left: 20px;
+  margin: 16px 0 0;
+}
+
+.resume-entry li {
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.resume-entry:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.resume-role-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.resume-role-line {
+  font-size: 1.05em;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.resume-role-group--secondary {
+  margin-top: 12px;
+}
+
+.resume-meta {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.resume-tech {
+  margin-top: 14px;
+  font-size: 0.9em;
+  line-height: 1.7;
+}
+
+.resume-subentry {
+  margin-top: 24px;
+  padding-left: 16px;
+  border-left: 3px solid #000000;
+}
+
+.resume-subentry h4 {
+  font-size: 1.05em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume-subentry ul {
+  margin-top: 0;
+}
+
+.resume-stack,
+.resume-education,
+.resume-contact-list {
+  display: grid;
+  gap: 16px;
+}
+
+.resume-stack p,
+.resume-education p,
+.resume-contact-list p {
+  display: flex;
+  align-items: baseline;
+  line-height: 1.7;
+}
+
+.resume-stack span,
+.resume-education span,
+.resume-contact-list span {
+  display: block;
+  width: 160px;
+  flex-shrink: 0;
+  color: #000000;
+  font-weight: 600;
+}
+
+.resume-section--contact {
+  border-bottom: 0;
+}
+
+.resume-actions--footer {
+  margin-top: 24px;
+}
+
+@media only screen and (max-width: 900px) {
+  .resume-hero {
+    padding: 40px 24px 32px;
+  }
+
+  .resume-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-section {
+    padding: 32px 24px;
+  }
+
+  .resume-stack span,
+  .resume-education span,
+  .resume-contact-list span {
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .resume-stack p,
+  .resume-education p,
+  .resume-contact-list p {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-button {
+    width: 100%;
+  }
+}
