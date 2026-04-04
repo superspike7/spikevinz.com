@@ -1,45 +1,18 @@
 @use "base" as *;
 
 .resume-page {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 24px 96px;
-}
-
-.resume-download {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.14);
-  background: rgba(255, 255, 255, 0.96);
-  color: $bodyColor;
-  padding: 10px 16px;
-  font-size: 0.88em;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-
-  &:hover {
-    color: $primary;
-    border-color: rgba(211, 0, 1, 0.3);
-  }
-}
-
-.resume-download--sticky {
-  position: fixed;
-  top: 20px;
-  right: 24px;
-  z-index: 10;
+  padding-bottom: 56px;
 }
 
 .resume-hero {
-  padding: 64px 0 32px;
-  border-bottom: 2px solid $bodyColor;
+  padding: 64px 40px 40px;
+  border-bottom: 3px solid $bodyColor;
 
   h1 {
-    font-size: clamp(2.6rem, 6vw, 4.6rem);
-    line-height: 0.98;
-    letter-spacing: -0.05em;
-    margin-bottom: 12px;
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    margin-bottom: 16px;
   }
 }
 
@@ -51,21 +24,23 @@
 
 .resume-kicker {
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.78em;
-  margin-bottom: 18px;
+  letter-spacing: 0.08em;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: $primary;
+  margin-bottom: 24px;
 }
 
 .resume-role {
-  font-size: 1.2em;
+  font-size: 1.15em;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .resume-intro {
   max-width: 62ch;
   font-size: 1.04em;
-  line-height: 1.9;
+  line-height: 1.8;
 }
 
 .resume-actions {
@@ -79,44 +54,46 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 16px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 14px 18px;
+  border: 3px solid $bodyColor;
   color: $bodyColor;
-  font-size: 0.92em;
-  font-weight: 500;
+  font-size: 0.95em;
+  font-weight: 700;
   background: #fff;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.06);
 
   &:hover {
-    color: $primary;
-    border-color: rgba(211, 0, 1, 0.3);
+    color: $bodyColor;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.06);
   }
 }
 
 .resume-button--primary {
-  background: $bodyColor;
+  background: $primary;
   border-color: $bodyColor;
   color: #fff;
 
   &:hover {
     color: #fff;
-    background: $primary;
-    border-color: $primary;
+    background: #b00001;
+    border-color: $bodyColor;
   }
 }
 
 .resume-section {
-  padding-top: 56px;
+  padding: 40px;
+  border-bottom: 3px solid $bodyColor;
 
   > h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin-bottom: 24px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: -0.02em;
   }
 
   > p {
     font-size: 1.02em;
-    line-height: 1.9;
+    line-height: 1.8;
     margin-bottom: 16px;
     max-width: 64ch;
   }
@@ -129,9 +106,10 @@
 }
 
 .resume-card {
-  border-left: 2px solid $primary;
-  background: transparent;
-  padding: 4px 0 4px 16px;
+  border: 3px solid $bodyColor;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.04);
 
   h3 {
     font-size: 1.15em;
@@ -145,7 +123,7 @@
 }
 
 .resume-highlight-value {
-  font-size: 1.02em;
+  font-size: 1.05em;
   font-weight: 700;
   color: $primary;
   margin-bottom: 8px;
@@ -154,7 +132,7 @@
 .resume-entry {
   padding: 0 0 32px;
   margin-bottom: 32px;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid #e5e5e5;
 
   h3 {
     font-size: 1.3em;
@@ -211,7 +189,7 @@
 .resume-subentry {
   margin-top: 24px;
   padding-left: 16px;
-  border-left: 2px solid rgba(0, 0, 0, 0.08);
+  border-left: 3px solid $bodyColor;
 
   h4 {
     font-size: 1.05em;
@@ -246,7 +224,7 @@
 }
 
 .resume-section--contact {
-  padding-bottom: 16px;
+  border-bottom: 0;
 }
 
 .resume-actions--footer {
@@ -254,22 +232,16 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .resume-page {
-    padding: 0 20px 72px;
-  }
-
-  .resume-download--sticky {
-    position: static;
-    margin: 0 20px;
-    width: calc(100% - 40px);
-  }
-
   .resume-hero {
-    padding-top: 28px;
+    padding: 40px 24px 32px;
   }
 
   .resume-card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .resume-section {
+    padding: 32px 24px;
   }
 
   .resume-stack span,
@@ -285,5 +257,9 @@
   .resume-contact-list p {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .resume-button {
+    width: 100%;
   }
 }
