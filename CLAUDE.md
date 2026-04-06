@@ -3,6 +3,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+
 ## Project Overview
 
 Personal portfolio and blog site for Spike Vinz Cruz (spikevinz.com). Built with Jekyll (Ruby static site generator), hosted on GitHub Pages.
