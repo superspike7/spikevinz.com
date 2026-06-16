@@ -886,3 +886,301 @@ ul.styled-list li::before {
     width: 100%;
   }
 }
+
+.wordpress-page {
+  width: 100%;
+}
+
+.wordpress-hero {
+  padding: 72px 40px 48px;
+  border-bottom: 3px solid #000000;
+}
+
+.wordpress-kicker {
+  color: #d30001;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.wordpress-hero h1 {
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin-bottom: 24px;
+  max-width: 13ch;
+}
+
+.wordpress-lead {
+  color: #333;
+  font-size: 1.12rem;
+  line-height: 1.8;
+  max-width: 68ch;
+}
+
+.wordpress-note {
+  color: #555;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-top: 20px;
+  max-width: 62ch;
+}
+
+.wordpress-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.wordpress-proof {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-bottom: 3px solid #000000;
+}
+
+.wordpress-proof p {
+  align-items: center;
+  border-right: 3px solid #000000;
+  color: #111;
+  display: flex;
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.45;
+  min-height: 112px;
+  padding: 20px;
+}
+
+.wordpress-proof p:last-child {
+  border-right: 0;
+}
+
+.wordpress-section {
+  border-bottom: 3px solid #000000;
+  padding: 48px 40px;
+}
+
+.wordpress-section--split {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 0.9fr 1.4fr;
+}
+
+.wordpress-section-header h2 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.wordpress-section-header p {
+  color: #444;
+  line-height: 1.75;
+  margin-top: 16px;
+}
+
+.wordpress-card-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 28px;
+}
+
+.wordpress-card-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.wordpress-card {
+  background: #ffffff;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+  padding: 24px;
+}
+
+.wordpress-card h3 {
+  font-size: 1.16rem;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.wordpress-card p,
+.wordpress-card li,
+.wordpress-check-list li,
+.wordpress-steps li,
+.wordpress-tools {
+  color: #333;
+  line-height: 1.7;
+}
+
+.wordpress-card ul,
+.wordpress-check-list,
+.wordpress-qa-card ul {
+  list-style: none;
+}
+
+.wordpress-card li,
+.wordpress-check-list li,
+.wordpress-qa-card li {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 0 10px 28px;
+  position: relative;
+}
+
+.wordpress-card li:last-child,
+.wordpress-check-list li:last-child,
+.wordpress-qa-card li:last-child {
+  border-bottom: 0;
+}
+
+.wordpress-card li::before,
+.wordpress-check-list li::before,
+.wordpress-qa-card li::before {
+  color: #d30001;
+  content: "->";
+  font-weight: 700;
+  left: 0;
+  position: absolute;
+}
+
+.wordpress-work-card p {
+  margin-top: 14px;
+}
+
+.wordpress-work-card strong {
+  color: #000000;
+}
+
+.wordpress-loom-placeholder {
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  background: #fafafa;
+  border: 3px dashed #000000;
+  color: #555;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 220px;
+  padding: 24px;
+  text-align: center;
+}
+
+.wordpress-steps {
+  counter-reset: wordpress-step;
+  list-style: none;
+}
+
+.wordpress-steps li {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 12px 0 12px 48px;
+  position: relative;
+}
+
+.wordpress-steps li::before {
+  color: #d30001;
+  content: counter(wordpress-step);
+  counter-increment: wordpress-step;
+  font-weight: 700;
+  left: 0;
+  position: absolute;
+}
+
+.wordpress-qa-card {
+  background: #fafafa;
+  border: 3px solid #000000;
+  margin-top: 28px;
+  padding: 20px;
+}
+
+.wordpress-qa-card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.wordpress-note--boxed {
+  background: #fafafa;
+  border-left: 3px solid #d30001;
+  padding: 16px 18px;
+}
+
+.wordpress-final-cta {
+  padding: 64px 40px;
+  text-align: center;
+}
+
+.wordpress-final-cta h2 {
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0 auto 18px;
+  max-width: 16ch;
+}
+
+.wordpress-final-cta p {
+  color: #444;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 62ch;
+}
+
+.wordpress-actions--center {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .wordpress-hero,
+  .wordpress-section,
+  .wordpress-final-cta {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .wordpress-hero {
+    padding-top: 48px;
+  }
+
+  .wordpress-hero h1 {
+    max-width: none;
+  }
+
+  .wordpress-lead {
+    font-size: 1.02rem;
+  }
+
+  .wordpress-actions .resume-button {
+    width: 100%;
+  }
+
+  .wordpress-proof {
+    grid-template-columns: 1fr;
+  }
+
+  .wordpress-proof p {
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 0;
+    min-height: 0;
+    padding: 16px 24px;
+  }
+
+  .wordpress-proof p:last-child {
+    border-bottom: 0;
+  }
+
+  .wordpress-section--split,
+  .wordpress-card-grid,
+  .wordpress-card-grid--three {
+    grid-template-columns: 1fr;
+  }
+
+  .wordpress-card-grid {
+    gap: 18px;
+  }
+
+  .wordpress-card {
+    padding: 20px;
+  }
+
+  .wordpress-loom-placeholder {
+    min-height: 180px;
+  }
+}
