@@ -910,7 +910,7 @@ ul.styled-list li::before {
   line-height: 1.05;
   letter-spacing: -0.04em;
   margin-bottom: 24px;
-  max-width: 13ch;
+  max-width: 18ch;
 }
 
 .wordpress-lead {
